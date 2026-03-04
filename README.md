@@ -78,3 +78,24 @@ print('k' in a) # it will give the output as true because k is present in a
 print('z' in a) # it will give the output as false because z is not present in a
 print('k' not in a) # it will give the output as false because k is present in a
 print('z' not in a) # it will give the output as true because z is not present in a 
+#list operations
+
+#adding an element to the list
+
+hema.append(6) # it will add the value 6 at the end of the list
+print(hema) # it will give the output as [1,2,3,4,5,6]
+
+hema.insert(0,0) # it will add the value 0 at the index 0 of the list
+print(hema) # it will give the output as [0,1,2,3,4,5,6]
+
+#removing an element from the list
+hema.remove(0) # it will remove the value 0 from the list
+print(hema) # it will give the output as [1,2,3,4,5,6]
+
+hema.pop() # it will remove the last element from the list
+print(hema) # it will give the output as [1,2,3,4,5] 
+
+#replacing an element in the list
+hema[0]=10 # it will replace the value at index 0 with 10        
+print(hema) # it will give the output as [10,2,3,4,5]
+
