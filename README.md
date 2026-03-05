@@ -99,3 +99,53 @@ print(hema) # it will give the output as [1,2,3,4,5]
 hema[0]=10 # it will replace the value at index 0 with 10        
 print(hema) # it will give the output as [10,2,3,4,5]
 
+#tuples
+t=(1,2,3,4,5)   
+print(t) # it will give the output as (1,2,3,4,5)
+
+"""
+ its has the same operations as list
+ but it is immutable means we cannot change the value of the tuple once it is created
+ and it is faster than list because it is immutable
+ and it is used to store the data that cannot be changed like the days of the week, months of the year etc.
+"""
+
+#sets
+s={1,2,3,4,5}
+print(s) # it will give the output as {1,2,3,4,5}   
+
+"""
+it is unordered collection of unique elements
+it is mutable means we can change the value of the set  
+it is used to store the data that cannot be duplicated like the unique values of a list etc.
+"""
+#dictionaries
+d={"name":"kushal",
+   "age":20,"city":"delhi"
+}
+print(d) # it will give the output as {'name':'kushal','age':20,'city':'delhi'}
+
+#dictionary operations
+#adding an element to the dictionary
+d["country"]="india" # it will add the key country with the value india to the dictionary
+print(d) # it will give the output as {'name':'kushal','age':20,'city':'delhi','country':'india'}       
+ 
+#removing an element from the dictionary
+del d["city"] # it will remove the key city from the dictionary
+print(d) # it will give the output as {'name':'kushal','age':20,'country':'india'}  
+ 
+#replacing an element in the dictionary
+d["age"]=21 # it will replace the value of the key age with 21      
+print(d) # it will give the output as {'name':'kushal','age':21,'country':'india'}
+ 
+#accessing an element from the dictionary
+print(d["name"]) # it will give the output as kushal because it will access the value of the key name from the dictionary   
+ 
+#returning keys in the dictionary
+print(d.keys()) # it will give the output as ['name', 'age', 'country'] because these are the keys in the dictionary
+ 
+#returning values in the dictionary
+print(d.values()) # it will give the output as ['kushal', 21, 'india'] because these are the values in the dictionary   
+ 
+#returning items in the dictionary
+print(d.items()) # it will give the output as [('name', 'kushal'), ('age', 21), ('country', 'india')] because these are the items in the dictionary
