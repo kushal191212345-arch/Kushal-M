@@ -149,3 +149,52 @@ print(d.values()) # it will give the output as ['kushal', 21, 'india'] because t
  
 #returning items in the dictionary
 print(d.items()) # it will give the output as [('name', 'kushal'), ('age', 21), ('country', 'india')] because these are the items in the dictionary
+#conditional statements *(if, elif, else)*
+a=int(input("enter a number: "))
+if a>0:  
+      print("a is positive") # it will give the output as a is positive because a is greater than 0
+elif a<0:
+      print("a is negative") # it will give the output as a is negative because a is less than 0   
+else:
+      print("a is zero") # it will give the output as a is zero because a is equal to 0
+ 
+#simple operations on conditional statements
+print("Engineering fee structure")
+a=input("enter a name of the students: ")
+b=input("enter a catse name: ")
+c=int(input("enter a age: "))
+if b=="general" :
+      print("you have to pay full fee") # it will give the output as you have to pay full fee because the caste is general
+      if b==" OBC":
+            print("you have to pay 75% of the fee") # it will give the output as you have to pay 75% of the fee because the caste is OBC
+      elif b=="SC":
+            print("you have to pay 50% of the fee") # it will give the output as you have to pay 50% of the fee because the caste is SC/ST
+      elif b=="ST":
+            print("you have to pay 35% of the fee") # it will give the output as you have to pay 25% of the fee because the caste is SC/ST
+else:
+      print("you have to pay full fee")
+#loops
+
+#while loop
+
+e=input("enter a gender: ")
+b=int(input("enter a age: "))
+while True:
+      if e=="female":
+            print("ticket is free for womens")
+            break
+      if e=="male" and b>60:
+            print("ticket is free for senior citizens")
+            if b<10:
+                  print("ticket is free for childrens")
+      else:
+            print("u have to pay full price")
+ 
+#for loop
+i=int(input("enter a first number: "))
+j=int(input("enter a second number: "))
+for k in range(i,j):
+      for l in range(i,j):
+            print(f"{k}X{l}={k*l}") 
+      
+print(" ")
