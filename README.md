@@ -198,3 +198,12 @@ for k in range(i,j):
             print(f"{k}X{l}={k*l}") 
       
 print(" ")
+#some operation on loops with user interaction
+while True:
+    i=int(input("enter a first number: "))
+    j=int(input("enter a second number: "))
+    for k in range(1,i+1):
+        for l in range(1,j+1):
+            print(f"{k}X{l}={k*l}") 
+        print(" ")    
+    continue
