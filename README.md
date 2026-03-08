@@ -207,3 +207,15 @@ while True:
             print(f"{k}X{l}={k*l}") 
         print(" ")    
     continue
+    
+#list comprehension
+k=[1,2,3,4,5,6,7,8,9,10]
+dk=[i for i in k if i%2==0]
+print(dk) 
+
+l=[num**3 for num in range(30) if num%3!=0]
+print(l)
+
+m=[num for num in m ].split()
+print(m)
+
