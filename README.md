@@ -219,3 +219,10 @@ print(l)
 m=[num for num in m ].split()
 print(m)
 
+#dictionary comprehension
+
+k=input("enter a name: ")
+l=int(input("enter a age: "))
+n={k:l for k,l in zip(k,l)}
+print(n)
+
