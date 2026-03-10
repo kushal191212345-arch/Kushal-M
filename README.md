@@ -235,3 +235,8 @@ add(100,200) # it will give the output as 300 because it will add the two number
 #it is a function that takes two arguments a and b and prints the sum of a and b
 #it is a simple function that performs addition of two numbers and prints the result
 #it is a reusable block of code that can be called multiple times with different arguments to perform the same operation
+
+def greet(name):
+      print(f"hello {name} welcome to python programming")  
+greet("kushal") # it will give the output as hello kushal welcome to python programming because it will greet the name that is passed as an argument to the function
+greet("hema") # it will give the output as hello hema welcome to python programming because it will greet the name that is passed as an argument to the function
