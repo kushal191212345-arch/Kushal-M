@@ -226,3 +226,12 @@ l=int(input("enter a age: "))
 n={k:l for k,l in zip(k,l)}
 print(n)
 
+#Functions
+def add(a,b):
+      print(a+b)
+
+add(10,20) # it will give the output as 30 because it will add the two numbers
+add(100,200) # it will give the output as 300 because it will add the two numbers
+#it is a function that takes two arguments a and b and prints the sum of a and b
+#it is a simple function that performs addition of two numbers and prints the result
+#it is a reusable block of code that can be called multiple times with different arguments to perform the same operation
