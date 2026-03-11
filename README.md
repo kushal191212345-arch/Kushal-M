@@ -236,6 +236,31 @@ add(100,200) # it will give the output as 300 because it will add the two number
 #it is a simple function that performs addition of two numbers and prints the result
 #it is a reusable block of code that can be called multiple times with different arguments to perform the same operation
 
+
+#some operations on functions
+def factorial(n):
+      if n==0:
+            return 1
+      else:
+            return n*factorial(n-1)
+print(factorial(5)) 
+
+def calc_area(**shapes):
+      if "circle" in shapes:
+            radius = shapes["circle"]
+            pi = 3.14
+            area = pi * radius ** 2
+      elif "triangle" in shapes:
+            base = shapes["triangle"]["base"]
+            height = shapes["triangle"]["height"]
+            area = 0.5 * base * height
+      elif "rectangle" in shapes:
+            length = shapes["rectangle"]["length"]
+            width = shapes["rectangle"]["width"]
+            area = length * width
+      return area
+
+#we can call the function with different shapes and their dimensions to calculate the area
 def greet(name):
       print(f"hello {name} welcome to python programming")  
 greet("kushal") # it will give the output as hello kushal welcome to python programming because it will greet the name that is passed as an argument to the function
