@@ -265,3 +265,37 @@ def greet(name):
       print(f"hello {name} welcome to python programming")  
 greet("kushal") # it will give the output as hello kushal welcome to python programming because it will greet the name that is passed as an argument to the function
 greet("hema") # it will give the output as hello hema welcome to python programming because it will greet the name that is passed as an argument to the function
+
+
+
+
+
+# I has started to solve the roblems in hackerrank 
+#Task
+Given an integer, , perform the following conditional actions:
+
+If  is odd, print Weird
+If  is even and in the inclusive range of  to , print Not Weird
+If  is even and in the inclusive range of  to , print Weird
+If  is even and greater than , print Not Weird
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    n = int(input().strip())
+    if n%2!=0:
+        print("Weird")
+    elif n%2==0 and range(2,6):
+        print("Not Weird")
+    elif n%2==0 and range(6,21):
+        print("Weird")
+    elif n%2==0:
+        if n>20:
+            print("Not Weird")
