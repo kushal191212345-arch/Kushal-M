@@ -271,8 +271,7 @@ greet("hema") # it will give the output as hello hema welcome to python programm
 
 
 # I has started to solve the roblems in hackerrank 
-#Task
-Given an integer, , perform the following conditional actions:
+#Task Given an integer, , perform the following conditional actions:
 
 If  is odd, print Weird
 If  is even and in the inclusive range of  to , print Not Weird
@@ -299,3 +298,17 @@ if __name__ == '__main__':
     elif n%2==0:
         if n>20:
             print("Not Weird")
+
+#Task
+#The provided code stub reads two integers from STDIN,  and . Add code to print three lines where:
+
+#The first line contains the sum of the two numbers.
+#The second line contains the difference of the two numbers (first - second).
+#The third line contains the product of the two numbers
+
+if __name__ == '__main__':
+    a = int(input())
+    b = int(input())
+    print(a+b)
+    print(a-b)
+    print(a*b)
