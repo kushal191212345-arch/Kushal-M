@@ -312,3 +312,9 @@ if __name__ == '__main__':
     print(a+b)
     print(a-b)
     print(a*b)
+# The provided code stub reads an integer, , from STDIN. For all non-negative integers , print .
+if __name__ == '__main__':
+    n = int(input())
+    for i in range(0,n):
+        if i<n:
+            print(i**2)
