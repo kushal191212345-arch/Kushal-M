@@ -338,3 +338,21 @@ k=set(arr)
 m=sorted(list(k))
 l=m[-2]
 print(l)
+"""
+Given the names and grades for each student in a class of  students, store them in a nested list and print the name(s) of any student(s) having the second lowest grade
+"""
+if __name__ == '__main__':
+    students = []
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        students.append([name, score])
+    unique_grades = sorted(set(student[1] for student in students))
+    second_lowest_grade = unique_grades[1]
+    names_with_second_lowest = []
+    for student in students:
+        if student[1] == second_lowest_grade:
+            names_with_second_lowest.append(student[0])
+    names_with_second_lowest.sort()
+    for name in names_with_second_lowest:
+        print(name)
