@@ -371,4 +371,13 @@ if __name__ == '__main__':
     k=student_marks[query_name]
     l=sum(k)/len(k)
     print("{:.2f}".format(l))
-     
+
+"""
+Given an integer,n ,n and  space-separated integers as input, create a tuple, , of those  integers. Then compute and print the result of hash()
+"""
+if __name__ == '__main__':
+    # Read the number of elements (n)
+    n = int(input())
+    integer_list = map(int, input().split())
+    t = tuple(integer_list)
+    print(abs(hash(t)))
