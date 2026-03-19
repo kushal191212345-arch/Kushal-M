@@ -389,6 +389,20 @@ Without using any string methods, try to print the following:
 
 Note that "" represents the consecutive values in between.
 """
+
+"""
+Let's dive into the interesting topic of regular expressions! You are given some input, and you are required to check whether they are valid mobile numbers.
+
+A valid mobile number is a ten digit number starting with a 7,8  or 9
+"""
+import re
+n = int(input())
+for x in range(0, n):
+    if(re.match(r'^[7-9]{1}[0-9]{9}n?r?$',input())):
+        print ("YES")
+    else:
+        print ("NO")
+  
 if __name__ == '__main__':
     n = int(input())
     for i in range(1,n+1):
