@@ -429,3 +429,17 @@ if __name__ == '__main__':
     s_new = mutate_string(s, int(i), c)
     print(s_new)
         
+#some operations on encapsulation
+class database:
+    def __init__(self):
+        self.__storage={}
+    def write(self,key,value):
+        self.__storage[key]=value
+    def read(self,key):
+        if key in self.__storage:
+            print(self.__storage[key])
+        else:
+            print("item not found")
+
+#here we can do our operation based on conditions
+    
