@@ -482,3 +482,17 @@ def calculate_earnings(shoes, requests):
             earnings += price
             inventory[size] -= 1   
     return earnings
+
+"""
+Task
+Given an integer, , and  space-separated integers as input, create a tuple, , of those  integers. Then compute and print the result of .
+
+Note: hash() is one of the functions in the __builtins__ module, so it need not be imported
+"""
+if __name__ == '__main__':
+    # Read the integer 'n', which denotes the number of elements (this input is not strictly used in the tuple creation below).
+    n = int(input())
+    integer_list = map(int, input().split())
+    t = tuple(integer_list)
+    print(abs(hash(t)))
+
