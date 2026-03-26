@@ -524,3 +524,23 @@ def is_leap(year):
 
 year = int(input())
 print(is_leap(year))
+
+"""
+
+You are given a string . It consists of alphanumeric characters, spaces and symbols(+,-).
+Your task is to find all the substrings of  that contains  or more vowels.
+Also, these substrings must lie in between  consonants and should contain vowels onl
+"""
+import re
+
+def find_vowel_substrings(s):
+    # Define the sets of vowels and consonants
+    vowels_pattern = r"[aeiouAEIOU]"
+    consonants_pattern = r"[qwrtypsdfghjklzxcvbnmQWRTYPSDFGHJKLZXCVBNM]"
+    pattern = f"(?<={consonants_pattern})({vowels_pattern}{{3,}})(?={consonants_pattern})"
+    matches = re.findall(pattern, s)
+    if matches:
+        for match in matches:
+            print(match)
+    else:
+        print("-1")
