@@ -584,7 +584,7 @@ they sre
 """
 
 """
-well detailed and simple on code banking system 
+well detailed and simple code on calculator 
 """
 def menu():
     print("\nSimple Calculator")
