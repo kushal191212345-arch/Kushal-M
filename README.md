@@ -623,3 +623,50 @@ while True:
         print("Invalid choice. Please select a valid option.")
 
 #created a number guess game using python code
+import random
+
+def number_guessing_game():
+    print("=" * 40)
+    print("   Welcome to the Number Guessing Game!")
+    print("=" * 40)
+    best_score = None
+    wins = 0
+    while True:
+        secret = random.randint(1, 100)
+        attempts = 0
+        guesses = []
+        print("\nI've picked a secret number between 1 and 100.")
+        print("Can you guess it?\n")
+        while True:
+            try:
+                guess = int(input("Your guess: "))
+                if guess < 1 or guess > 100:
+                    print("  Please enter a number between 1 and 100.")
+                    continue
+            except ValueError:
+                print("  Invalid input. Enter a whole number.")
+                continue
+            attempts += 1
+            guesses.append(guess)
+            if guess < secret:
+                print(f"  Too low!  Try higher. (Attempt #{attempts})")
+            elif guess > secret:
+                print(f"  Too high! Try lower. (Attempt #{attempts})")
+            else:
+                wins += 1
+                print(f"\n  You got it! The number was {secret}.")
+                print(f"  Solved in {attempts} attempt{'s' if attempts > 1 else ''}.")
+                print(f"  Your guesses: {guesses}")
+                if best_score is None or attempts < best_score:
+                    best_score = attempts
+                    print(f"  New best score: {best_score}!")
+                else:
+                    print(f"  Best score: {best_score} | Wins: {wins}")
+                break
+        play_again = input("\nPlay again? (y/n): ").strip().lower()
+        if play_again != 'y':
+            print(f"\nThanks for playing! Final stats — Wins: {wins}, Best score: {best_score}")
+            break
+
+if __name__ == "__main__":
+    number_guessing_game()
