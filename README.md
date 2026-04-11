@@ -670,3 +670,26 @@ def number_guessing_game():
 
 if __name__ == "__main__":
     number_guessing_game()
+
+  
+import time
+class countdown:
+    def __init__(self, start):
+        self.start = start
+    def __iter__(self):
+        return self  
+    def __next__(self):
+        if self.start <= 0:
+            raise StopIteration
+        num= self.start
+        self.start -= 1
+        return num
+
+cd = countdown(5)
+for num in cd:
+    print(num)
+    time.sleep(1)
+a=["Countdown ", "complete!"]
+for char in a:
+    print(char,end="",flush=True)
+    time.sleep(1)
